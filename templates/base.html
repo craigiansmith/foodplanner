@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foodplanner</title>
+        <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+        {% load static %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/newlanding.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mystyles.css' %}">
+    </head>
+    <body class="main">
+        <section class="hero is-info is-medium is-bold">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <h1 class="title">Food planner</h1>
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li><a href="mailto:craig@tbvp.com.au">Contact</a></li>
+                                    </ul>
+                                    <span class="navbar-item">
+                                        <a class="button is-white is-outlined" href="/register">
+                                            <span class="icon">
+                                                <i class="fa fa-angle-double-right"></i>
+                                            </span>
+                                            <span title="Register interest">Register</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    {% block content %}
+                    {% endblock %}
+            </div>
+            {% block modal %}
+            {% endblock %}
+        </section>
+        <footer class="footer has-background-info">
+                <div class="content has-text-centered">
+                    <div class="control level-item">
+                        <a href="http://web.tbvp.com.au">
+                            <div class="tags has-addons">
+                                <span class="tag is-primary">The Business Validation Project</span>
+                                <span class="tag is-warning">TBVP</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <script src="{% static 'js/bulma.js' %}"></script>
+            <script src="{% static 'js/demo.js' %}"></script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+__pycache__/
+node_modules/
+/static/
+fp.env
+*.vim
+dist/
+landing/static/demo.js
+landing/static/js/demo.js
+fp.db.env

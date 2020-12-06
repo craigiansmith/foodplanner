@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+$primary: #e0876a;
+$info: #f4a688;
+$link: #f9ccac;
+$warning: #fbefcc;
+$info: #f4a688;
+@use '../../../node_modules/bulma/bulma.sass' with (
+    $primary: #e0876a,
+    $info: #f4a688,
+    $link: #f9ccac,
+    $warning: #fbefcc
+);
+
+@use '../css/hero.css';
+@use '../sass/mystyles.scss';

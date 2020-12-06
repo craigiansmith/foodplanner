@@ -1,0 +1,17 @@
+body {
+    background-color: #fbefcc;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    flex: 1;
+}
+
+.card-image > .fa {
+    color: #f4a688 !important;
+}

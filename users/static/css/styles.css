@@ -1,0 +1,16 @@
+:root {
+  --colour-one: hsl(143, 45%, 17%);
+  --colour-two: hsl(144.1, 100%, 41.6%);
+  --colour-three: hsl(144, 100%, 58%);
+  --colour-four: hsl(144, 100%, 75%);
+  --colour-five: hsl(144, 100%, 92%);
+}
+
+* {
+  color: var(--colour-one);
+  background: var(--colour-three);
+}
+
+.container * {
+  background: var(--colour-four);
+}

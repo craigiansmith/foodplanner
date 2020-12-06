@@ -1,0 +1,10 @@
+name: food planner
+version: 12
+urls:
+  - foodplanner.com.au
+shortName: foodplanner
+hostParent: fitness
+ports:
+  a: '50110'
+  b: '50120'
+

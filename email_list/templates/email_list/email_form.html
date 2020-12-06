@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="title is-large">Register Email</h1>
+    <p class="subtitle is-medium">Register your email to find out when the app is ready for beta testing and be one of the first to try it out for free.</p>
+    <form method="POST">
+		{% csrf_token %}
+        <div class="columns is-centered">
+            <div class="column is-half">
+                {% for field in form %}
+                <div class="field">
+                    {{ field.errors }}
+                    <label class="label is-large" for="{{ field.auto_id }}">{{ field.label}}</label> 
+                    <div class="control">
+                        {{ field }}
+                    </div>
+                    {% if field.help_text %}
+                    <p class="help is-info-dark">{{ field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+		<button type="submit" class="button is-large is-success">Save</button>
+        </div>
+    </div>
+</section>
+{% endblock %}

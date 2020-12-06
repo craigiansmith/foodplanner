@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block pagetitle %}
+<h1>Login</h1>
+{% endblock %}
+{% block content %}
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+{% block navbar %}{% endblock %}
+{% endblock %}

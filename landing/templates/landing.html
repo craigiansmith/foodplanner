@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+        <h1 class="title">
+            Eat consciously for better health
+        </h1>
+        <h2 class="subtitle">
+            Gain all the nutritional knowledge that you need to be able to make informed decisions about your food intake.
+        </h2>
+        <!--a href="/register" class="button is-primary is-large">Register Interest</a-->
+        <button id="modal-button" class="button is-primary is-large">Try Demo</button>
+    </div>
+</div>
+</section>
+<div class="box cta">
+<p class="has-text-centered">
+    <span class="tag is-warning">Alpha</span> Currently the aim is to see who is interested in this service, register to let us know.
+</p>
+</div>
+<section class="container">
+<div class="columns features">
+    <div class="column is-4">
+        <div class="card is-shady">
+            <div class="card-image has-text-centered">
+                <i class="fa fa-snowflake-o"></i>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <h4>Learn about nutrient content.</h4>
+                    <p>Foodplanner provides you reliable information about what nutrients are in a wide range of foods. By entering a recipe, or viewing one of ours you can see exactly what nutrients are in it.</p>
+                    <p><a href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-4">
+        <div class="card is-shady">
+            <div class="card-image has-text-centered">
+                <i class="fa fa-calculator"></i>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <h4>Get feedback on your diet.</h4>
+                    <p>Foodplanner will look at your weekly and daily mealplans and calculate if there are any shortfalls in daily recommended intake of nutrients for you and your family.</p>
+                    <p><a href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-4">
+        <div class="card is-shady">
+            <div class="card-image has-text-centered">
+                <i class="fa fa-thermometer-three-quarters"></i>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <h4> Manage calorie and nutrient intake. </h4>
+                    <p>You can easily see how many calories are in your mealplan using Foodplanner. We even make it simple to track those unexpected snacks.</p>
+                    <p><a href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="columns features">
+    <div class="column is-4 is-offset-2 ">
+        <div class="card is-shady">
+            <div class="card-image has-text-centered">
+                <i class="fa fa-check-circle-o"></i>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <h4>Maintain your desired weight.</h4>
+                    <p>By tracking  exactly how many calories you consume, Foodplanner is able to recommend approximately how much exercise you need to do to lose or maintain weight. We can even tell you if you're likely to put some on.</p>
+                    <p><a href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-4">
+        <div class="card is-shady">
+            <div class="card-image has-text-centered">
+                <i class="fa fa-heart"></i>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <h4> Safely switch to vegetarian. </h4>
+                    <p>Because Foodplanner knows what nutrients are in different foods, we are able to help you make the switch to vegetarian without losing access to important minerals such as iron.</p>
+                    <p><a href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block modal %}
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head"><p>Demo (nutrition figures are not yet accurate)</p><!--button class="delete"></button--></header>
+            <section id="demo-root" class="modal-card-body"></section>
+            <footer class="modal-card-foot">
+                <a href="/register" class="button is-success">Register your email to get updates</a> 
+            </footer>
+        </div>
+    </div>
+    {% endblock %}
